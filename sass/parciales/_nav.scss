@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/Fondo1.jpg");
+    font-family: $body-font;
+}
+
+.navbar {
+    background-color: #E6E6FA; 
+    &-brand {
+        margin: $navbar-margin;
+            }
+         }
+
+.collapse {
+     background-color: #E6E6FA;       
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: $ul-marginright;
+     li {
+        display: flex;
+        justify-content: center;
+        line-height: 40px;
+        margin: $li-margin;
+           a {
+            font-size: $a-size;
+            margin: $a-margin;
+            padding: $a-padding;
+            border-radius: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+              &.active, &:hover {
+                background: #DDA0DD; 
+                transition: .5s;
+                                 }
+               }
+         }
+     }
+                 } 

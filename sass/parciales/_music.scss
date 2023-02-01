@@ -1,0 +1,34 @@
+.music-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: $music-margin;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+ & .portada-music{
+        height: 350px;
+        margin: $img-margin;
+        position: relative;
+        border: 10px solid transparent;
+        padding: $img-padding;
+        border-image: url(../img/Fondo.jpg) 50 round;
+        animation-name: movimiento;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-delay: 5s;
+       }
+}
+
+        .music-content h2{
+            margin: $h2-margin;
+            padding: $btn-padding;
+            font-size: $h2-size;
+            color: $color-black;
+            text-shadow: $title-shadow;
+                          }
+
+    @keyframes movimiento{
+        0%{ height: 500px;}
+                         }
+                    

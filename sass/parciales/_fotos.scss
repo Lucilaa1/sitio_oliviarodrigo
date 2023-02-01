@@ -1,0 +1,17 @@
+.fotos-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    & .imagenes{
+        display: block;
+        margin-left: $music-margin;
+        margin-right: $music-margin;
+        position: relative;
+        margin: $img-margin;
+        padding: $imagenes-padding;
+        width: 395px;
+        height: 350px;
+         padding: $imagenes-padding2;
+                }
+                  }
+

@@ -1,0 +1,438 @@
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background: url("../img/Fondo1.jpg");
+  font-family: "Varela Round", sans-serif; }
+
+.navbar {
+  background-color: #E6E6FA; }
+  .navbar-brand {
+    margin: 0 40px; }
+
+.collapse {
+  background-color: #E6E6FA; }
+  .collapse ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px; }
+    .collapse ul li {
+      display: flex;
+      justify-content: center;
+      line-height: 40px;
+      margin: 0 30px; }
+      .collapse ul li a {
+        font-size: 20px;
+        margin: 10px 25px;
+        padding: 3px 6px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .collapse ul li a.active, .collapse ul li a:hover {
+          background: #DDA0DD;
+          transition: .5s; }
+
+.title {
+  width: 90%;
+  font-size: 4rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #8A2BE2;
+  text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2; }
+
+.text {
+  font-family: 1rem "Lusitana", serif;
+  text-align: center;
+  border-style: inset;
+  border-color: violet;
+  background-color: #FFF8DC;
+  padding: 1rem 1.5rem;
+  width: 90%;
+  margin: 2rem; }
+
+.flex-shrink-0 {
+  padding-top: 100px;
+  margin: 2rem;
+  width: 45%; }
+  .flex-shrink-0 .foto {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    cursor: pointer;
+    border-style: dotted;
+    border-color: #8A2BE2;
+    transform: scale(1);
+    transition: transform 2s; }
+    .flex-shrink-0 .foto:hover {
+      transform: scaleX(1.1); }
+
+.footer {
+  width: 100%;
+  background-color: #F8F8FF; }
+  .footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 25px 0px; }
+    .footer .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer .grupo-1 .box figure img {
+        width: 200px; }
+
+.footer .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: #F0F8FF;
+  text-align: center;
+  transition: all 300ms ease; }
+  .footer .red-social a:hover {
+    color: #8A2BE2; }
+
+.footer .grupo-2 {
+  background-color: #F0F8FF;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000000; }
+  .footer .grupo-2 small {
+    font-size: 20px; }
+
+.fondo-tienda {
+  margin: 0px;
+  background: #FFF0F5;
+  font-family: "Varela Round", sans-serif; }
+
+.tienda-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .tienda-content .product-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    background-color: white; }
+    .tienda-content .product-container:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.product-container img {
+  width: 300px; }
+  .product-container img h3 {
+    margin-bottom: 10px;
+    margin-left: 10px; }
+
+.button-add {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background-color: white;
+  color: #000000;
+  border: 2px solid #A950A1;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px; }
+  .button-add:hover {
+    background-color: palevioletred;
+    color: #FFFFFF; }
+
+form {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  color: #000000;
+  outline: none;
+  padding: 8px; }
+  form fieldset {
+    padding: 2rem;
+    background-color: #D8BFD8;
+    font-family: 22px "Lusitana", serif;
+    border-radius: 3px;
+    text-align: center; }
+    form fieldset legend {
+      font-size: 35px;
+      text-shadow: -2px -2px 1px whitesmoke; }
+      form fieldset legend #userName {
+        padding: 8px;
+        width: 250px; }
+        form fieldset legend #userName #userLastName {
+          padding: 8px;
+          width: 250px; }
+          form fieldset legend #userName #userLastName #userSex {
+            padding: 8px;
+            width: 30px; }
+            form fieldset legend #userName #userLastName #userSex:focus {
+              border-color: #8A2BE2; }
+
+form #age {
+  padding: 8px;
+  width: 60px; }
+  form #age #userMail {
+    padding: 8px;
+    width: 290px; }
+    form #age #userMail comentario {
+      padding: 1rem 1.5rem; }
+
+textarea {
+  border: 0;
+  outline: none;
+  border: solid 1px #999;
+  padding: 8px;
+  height: 5rem;
+  width: 30rem;
+  text-align: center; }
+  textarea:focus {
+    border-color: #8A2BE2; }
+
+form input {
+  border: 0;
+  outline: none;
+  border: solid 1px #999; }
+  form input:focus {
+    border-color: #8A2BE2; }
+
+form .btn {
+  border: 3px solid rgba(100, 100, 100, 0.1);
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-size: 300%;
+  background-image: linear-gradient(to left, #A950A1, #2D3A54, #A950A1); }
+
+.music-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px; }
+  .music-content .portada-music {
+    height: 350px;
+    margin: 25px;
+    position: relative;
+    border: 10px solid transparent;
+    padding: 1px;
+    border-image: url(../img/Fondo.jpg) 50 round;
+    animation-name: movimiento;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 5s; }
+
+.music-content h2 {
+  margin: 200px 0;
+  padding: 10px;
+  font-size: 40px;
+  color: #000000;
+  text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2; }
+
+@keyframes movimiento {
+  0% {
+    height: 500px; } }
+
+.fotos-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .fotos-content .imagenes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: 25px;
+    padding: 4px 32px;
+    width: 395px;
+    height: 350px;
+    padding: 0%; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px; }
+  li {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    margin: 0 30px; }
+  .contenido {
+    margin: 2rem; }
+  .text {
+    margin: auto;
+    padding: auto;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
+    height: 300%; }
+  .foto {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100px;
+    height: 300px;
+    cursor: pointer;
+    border-style: dotted;
+    border-color: #8A2BE2;
+    transform: scale(1);
+    transition: transform 2s; }
+  .product-container {
+    width: 330px; }
+  .product-container img {
+    width: 100px; }
+  .footer .grupo-1 {
+    width: 85%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; }
+  .footer .grupo-1 .red-social a {
+    margin: 15px 15px;
+    padding: 36px;
+    background: none; } }
+
+@media screen and (max-width: 425px) {
+  .navbar-brand {
+    margin: 0 10px; }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px; }
+  li {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    margin: 0 30px; }
+  .portada {
+    height: 400px; }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem; }
+  .title {
+    width: auto;
+    font-size: 3,5rem;
+    text-align: center; }
+  .text {
+    margin: auto;
+    padding: auto;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: auto;
+    height: 50%; }
+  .flex-shrink-0 {
+    padding-top: 50px;
+    margin: 0;
+    width: 90%; }
+  .foto {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 50%;
+    cursor: pointer;
+    border-style: dotted;
+    border-color: #8A2BE2;
+    transform: scale(1);
+    transition: transform 2s; }
+  .foto:hover {
+    transform: scaleX(1.1); }
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    padding: 15px 0px; }
+  .footer .grupo-1 .red-social a {
+    margin: 5px 5px;
+    padding: 20px;
+    background: none; }
+  .product-container {
+    margin: 15px 5px;
+    padding: 2px 16px; }
+  .product-container img {
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center; }
+  form {
+    width: 85%; }
+  #userName {
+    padding: 6px;
+    width: 260px; }
+  #userLastName {
+    padding: 6px;
+    width: 260px; }
+  #userSex {
+    padding: 8px;
+    width: 15px; }
+  #age {
+    padding: 5px;
+    width: 40px; }
+  #userMail {
+    padding: 6px;
+    width: 260px; }
+  #comentario {
+    padding: 30px;
+    width: 260px; }
+  .btn {
+    margin: 15px;
+    width: 100px; }
+  .music-content {
+    margin: auto;
+    padding: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+  .portada-music {
+    height: 100px; }
+  .music-content h2 {
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2; }
+  .fotos-content {
+    padding-top: 50px;
+    margin: 0;
+    padding: 0; }
+  .imagenes {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 50%; }
+  @keyframes movimiento {
+    0% {
+      height: 300px; } } }

@@ -1,0 +1,51 @@
+
+.footer{
+    width: 100%;
+    background-color: #F8F8FF;
+     & .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: $grupo1-margin;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: $grupo1-padding;
+        &  .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                & img{
+                     width: 200px;
+                     }
+                       }
+                  }
+        }
+
+
+     .footer .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: $color-black;
+        margin-right: $redsocial-marginright;
+        background-color: #F0F8FF;
+        text-align: center;
+        transition: all 300ms ease;
+            &:hover{
+                color: $color-blueviolet;
+                   }
+                            }
+
+        .footer .grupo-2{
+            background-color: #F0F8FF;
+            padding: $grupo2-padding;
+            text-align: center;
+            color: $color-black;
+                 & small{
+                    font-size: $small-size;
+                        }
+                         }
